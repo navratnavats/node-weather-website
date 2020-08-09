@@ -42,7 +42,7 @@ input{
     border-top:  black;
 
 }
-#answer{
+#msg1 {
     padding-top: 0.5rem;
-    padding-bottom: 0;
+    padding-bottom: 0; 
 }

@@ -19,9 +19,9 @@ weatherformdata.addEventListener('submit', (e)=>{
             else{
                 document.getElementById("msg1").innerHTML=data.name +", "+data.region+
                 ", "+ data.country+"<br/>Temperature is => "+ data.temperature+
-                "<br /> Feels Like => "+data.feelslike +"<br /> Weather Description => "+ 
+                "C<br /> Feels Like => "+data.feelslike +"C<br /> Weather Description => "+ 
                 data.weather_descriptions+ " <br /> Visibility => " +
-                data.visibility+" <br /> Wind Speed => "+data.wind_speed ;
+                data.visibility+"km <br /> Wind Speed => "+data.wind_speed +"km/hr";
                 
             }
         })

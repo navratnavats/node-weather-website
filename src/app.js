@@ -45,11 +45,12 @@ app.get("/weather",(req,res)=>{
     finder(address, (error,{temperature,feelslike,name,region,country,lati,longi,weather_descriptions,visibility,wind_speed}={})=>{
         if(error!==undefined)
         {
-            return res.send(error)
+            
+            return res.send({error})
             
         }
         else{
-            console.log(wind_speed);
+            
             res.send({
                 name:name,
                 region:region,

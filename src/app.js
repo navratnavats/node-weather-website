@@ -42,7 +42,7 @@ app.get("/weather",(req,res)=>{
     if(!address){
         return res.send("Error Please enter the term")
     }
-    finder(address, (error,{temperature,feelslike,name,region,country,lati,longi,weather_descriptions,visibility,wind_speed}={})=>{
+    finder(address, (error,{temperature,feelslike,name,region,country,lati,longi,weather_descriptions,visibility,wind_speed,humidity,cloudcover}={})=>{
         if(error!==undefined)
         {
             
@@ -62,6 +62,8 @@ app.get("/weather",(req,res)=>{
                 weather_descriptions:weather_descriptions,
                 lati:lati,
                 longi:longi,
+                cloudcover:cloudcover,
+                humidity:humidity
                 
 
             })

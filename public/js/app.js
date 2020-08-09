@@ -21,7 +21,8 @@ weatherformdata.addEventListener('submit', (e)=>{
                 ", "+ data.country+"<br/>Temperature is => "+ data.temperature+
                 "C<br /> Feels Like => "+data.feelslike +"C<br /> Weather Description => "+ 
                 data.weather_descriptions+ " <br /> Visibility => " +
-                data.visibility+"km <br /> Wind Speed => "+data.wind_speed +"km/hr";
+                data.visibility+"km <br /> Wind Speed => "+data.wind_speed +"km/hr <br /> Humidity is => "+ 
+                data.humidity+"% <br/> Cloud Cover is => "+data.cloudcover+"%";
                 
             }
         })

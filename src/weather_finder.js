@@ -21,7 +21,9 @@ const weather=(search,callback)=>{
                 region:res.body.location.region,
                 country:res.body.location.country,
                 visibility:res.body.current.visibility,
-                wind_speed:res.body.current.wind_speed
+                wind_speed:res.body.current.wind_speed,
+                humidity:res.body.current.humidity,
+                cloudcover:res.body.current.cloudcover
 
             })
         }

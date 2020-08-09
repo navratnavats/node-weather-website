@@ -10,7 +10,7 @@ const search=document.querySelector("input")
 weatherformdata.addEventListener('submit', (e)=>{
     e.preventDefault()
     document.getElementById('msg1').innerHTML="Loading.."
-    const url="http://localhost:3000/weather?address="+search.value;;
+    const url="/weather?address="+search.value;;
     fetch(url).then((response)=>{
         response.json().then((data)=>{
             if(data.error){

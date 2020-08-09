@@ -1,0 +1,48 @@
+body{
+    color: black;
+    
+}
+
+header{
+    font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 15rem ;
+    
+}
+header a{
+    color: darkslategray;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+hr{
+    border-top: 5px solid grey;
+    border-style: dotted;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 50rem;
+    margin: 20rem 0 0 15rem;
+    padding-bottom: 0.8rem;
+    /* padding-top: 50rem; */
+    
+}
+p{
+    padding: 2rem 0 2rem 0;
+    margin: 0rem 0rem 0rem 15rem ;
+    font-family: sans-serif;
+}
+footer em{
+    margin: 0rem 0rem 0rem 15rem ;
+    
+}
+form{
+    margin:0 0 0  15rem;
+}
+input{
+    border-top:  black;
+
+}
+#answer{
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}

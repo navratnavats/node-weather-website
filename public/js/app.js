@@ -17,9 +17,11 @@ weatherformdata.addEventListener('submit', (e)=>{
                 
             }
             else{
-                
-                document.getElementById("answer").innerHTML="Temperature is " +data.current.temperature+
-                "<br /> Region is "+ data.location.region;
+                document.getElementById("msg1").innerHTML=data.location.name +", "+data.location.region+
+                ", "+ data.location.country;
+                document.getElementById('msg2'),innerHTML="Temperature is "+ data.current.temperature+
+                "<br/> Feels Like"+data.country.feelslike +"<br /> Weather Description "+ data.current.weater_descriptions+ " <br /> Wind Speed" +
+                data.current.wind_speed+" <br /> Visibility "+data.current.visibility 
                 
             }
         })

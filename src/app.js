@@ -49,7 +49,7 @@ app.get("/weather",(req,res)=>{
             
         }
         else{
-            console.log(temperature);
+            console.log(wind_speed);
             res.send({
                 name:name,
                 region:region,
@@ -60,7 +60,9 @@ app.get("/weather",(req,res)=>{
                 wind_speed:wind_speed,
                 weather_descriptions:weather_descriptions,
                 lati:lati,
-                longi:longi
+                longi:longi,
+                
+
             })
         }
 })

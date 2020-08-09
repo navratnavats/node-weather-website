@@ -14,12 +14,14 @@ const weather=(search,callback)=>{
             callback(undefined,{
                 temperature:res.body.current.temperature,
                 feelslike:res.body.current.feelslike,
-                weather_description:res.body.current.weather_descriptions,
+                weather_descriptions:res.body.current.weather_descriptions,
                 lati:res.body.location.lat,
                 longi:res.body.location.lon,
                 name:res.body.location.name,
                 region:res.body.location.region,
-                country:res.body.location.country
+                country:res.body.location.country,
+                visibility:res.body.current.visibility,
+                wind_speed:res.body.current.wind_speed
 
             })
         }

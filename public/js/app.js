@@ -20,8 +20,8 @@ weatherformdata.addEventListener('submit', (e)=>{
                 document.getElementById("msg1").innerHTML=data.name +", "+data.region+
                 ", "+ data.country+"<br/>Temperature is => "+ data.temperature+
                 "<br /> Feels Like => "+data.feelslike +"<br /> Weather Description => "+ 
-                data.weather_descriptions+ " <br /> Wind Speed => " +
-                data.visibility+" <br /> Visibility => "+data.wind_speed ;
+                data.weather_descriptions+ " <br /> Visibility => " +
+                data.visibility+" <br /> Wind Speed => "+data.wind_speed ;
                 
             }
         })

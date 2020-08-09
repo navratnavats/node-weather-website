@@ -1,7 +1,3 @@
-
-
-console.log('Client side javascript file is loaded!')
-
 // const url="http://api.weatherstack.com/current?access_key=637bebc0385f89c8cb879d2dfe379974&query=!!!&units=m"
 // fetch(url).then((response)=>{
 //     response.json().then((data)=>{

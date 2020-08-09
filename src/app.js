@@ -3,8 +3,9 @@ const express = require('express')
 const hbs=require('hbs')
 const finder=require("./weather_finder")
 
-const port =process.env.PORT || 3000
+
 const app = express()
+const port =process.env.PORT || 3000
 const home = path.join(__dirname, '../public')
 //setting up hbs engine
 app.set('view engine', 'hbs')
@@ -37,28 +38,29 @@ app.get('/help', (req, res) => {
 
 
 app.get("/weather",(req,res)=>{
-    const address=req.query.search
+    const address=req.query.address
     if(!address){
         return res.send("Error Please enter the term")
     }
-    finder(address, (error,{temperature,feelslike,name,region,country,lati,longi,weather_descriptions}={})=>{
+    finder(address, (error,{temperature,feelslike,name,region,country,lati,longi,weather_descriptions,visibility,wind_speed}={})=>{
         if(error!==undefined)
         {
             return res.send(error)
             
         }
         else{
-            
+            console.log(temperature);
             res.send({
                 name:name,
                 region:region,
                 country:country,
                 temperature:temperature,
                 feelslike:feelslike,
+                visibility:visibility,
+                wind_speed:wind_speed,
                 weather_descriptions:weather_descriptions,
                 lati:lati,
                 longi:longi
-
             })
         }
 })
